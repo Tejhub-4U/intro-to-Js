@@ -250,3 +250,40 @@ const myNameFunction = function(){
 }
 console.log(`My name  is : ${myNameFunction()}`); 
 
+// Arrow function
+
+// function double(n){
+//     return n*2;
+// }
+// const double = function(n){
+
+//     return n*2;
+// }
+
+// const double = (n) => {
+//     return n*2;
+// }
+
+const doubleTheNumber = (n) => n*2;
+console.log(`double of 5 is :${doubleTheNumber(5)}`);
+
+const divide = () => 10/2;
+console.log(`Division of 10 by 2 it: ${divide()}`);
+ 
+function calculateBillOne(itemPrice,quanity) {
+    return itemPrice*quanity;
+}
+
+const calculateBillTwo = (itemPrice,quanity) => itemPrice * quanity;
+console.log(calculateBillTwo(10, 2));
+
+const totalBillValue = (itemPrice,quantity,tax,discount) => itemPrice*quantity+tax-discount;
+console.log(totalBillValue(10, 2,5,3));
+
+const greet = (name = " Freind")=> {
+    return `Hello, ${name}`;
+}
+
+console.log(greet());
+console.log(greet(""));
+
